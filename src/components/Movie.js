@@ -3,14 +3,16 @@ import { Link } from "react-router-dom";
 
 function Movie({ id, coverImg, title, summary, genres }) {
 
+  const publicUrl = process.env.PUBLIC_URL || '';
+
   return (
     <div className="movie-card">
-      <Link to={`/movie/${id}`}>
+      <Link to={`${publicUrl}/movie/${id}`}>
         <img src={coverImg} alt={title} className="movie-card__thumb" />
       </Link>
       <div className="movie-card__body">
         <h2 className="movie-card__title">
-          <Link to={`/movie/${id}`}>{title}</Link>
+          <Link to={`${publicUrl}/movie/${id}`}>{title}</Link>
         </h2>
         <ul className="movie-card__genres">
           {genres?.map((g) => (
