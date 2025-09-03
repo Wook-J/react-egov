@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/react-egov/static/css/main.aef2aba2.css",
-    "main.js": "/react-egov/static/js/main.3f5c09b6.js",
+    "main.js": "/react-egov/static/js/main.264e8c4d.js",
     "index.html": "/react-egov/index.html",
     "main.aef2aba2.css.map": "/react-egov/static/css/main.aef2aba2.css.map",
-    "main.3f5c09b6.js.map": "/react-egov/static/js/main.3f5c09b6.js.map"
+    "main.264e8c4d.js.map": "/react-egov/static/js/main.264e8c4d.js.map"
   },
   "entrypoints": [
     "static/css/main.aef2aba2.css",
-    "static/js/main.3f5c09b6.js"
+    "static/js/main.264e8c4d.js"
   ]
 }
