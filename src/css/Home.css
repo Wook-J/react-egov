@@ -1,0 +1,101 @@
+/* 페이지 레이아웃 */
+.home {
+  min-height: 100vh;
+  padding: 24px 20px 40px;
+  background: #f7f7fb;
+  color: #111;
+}
+
+/* 상단 바 */
+.home__header {
+  max-width: 1040px;
+  margin: 0 auto 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.home__title {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: .2px;
+}
+
+.home__subtitle {
+  margin: 2px 0 0;
+  font-size: 13px;
+  color: #666;
+}
+
+/* 그리드 */
+.home__grid {
+  max-width: 1040px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 16px;
+}
+
+/* 반응형 */
+@media (max-width: 1200px) {
+  .home__grid { grid-template-columns: repeat(4, 1fr); }
+}
+@media (max-width: 900px) {
+  .home__grid { grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 680px) {
+  .home__grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 420px) {
+  .home__grid { grid-template-columns: 1fr; }
+}
+
+/* (선택) 카드 공통 톤 – Movie 컴포넌트에 클래스가 있다면 활용 */
+.movie-card {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 14px rgba(0,0,0,.04);
+  transition: transform .06s ease, box-shadow .2s ease;
+}
+.movie-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0,0,0,.08);
+}
+.movie-card__thumb {
+  width: 100%;
+  aspect-ratio: 3/4;
+  object-fit: cover;
+  display: block;
+}
+.movie-card__body {
+  padding: 10px 12px 12px;
+}
+.movie-card__title {
+  margin: 0 0 6px;
+  font-size: 15px;
+  font-weight: 800;
+  line-height: 1.3;
+}
+.movie-card__meta {
+  font-size: 12px;
+  color: #666;
+  display: flex;
+  gap: 8px;
+}
+
+.movie-card__summary {
+  margin: 8px 0 0;
+  font-size: 13px;
+  color: #444;
+  line-height: 1.5;
+
+  /* 3줄까지만 보이고 ... 처리 */
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
