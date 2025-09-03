@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/react-egov/static/css/main.aef2aba2.css",
+    "main.js": "/react-egov/static/js/main.4c31556a.js",
+    "index.html": "/react-egov/index.html",
+    "main.aef2aba2.css.map": "/react-egov/static/css/main.aef2aba2.css.map",
+    "main.4c31556a.js.map": "/react-egov/static/js/main.4c31556a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.aef2aba2.css",
+    "static/js/main.4c31556a.js"
+  ]
+}
