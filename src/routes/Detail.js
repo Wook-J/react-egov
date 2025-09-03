@@ -3,8 +3,6 @@ import { useParams, Link } from "react-router-dom";
 import "../css/Detail.css";
 
 function Detail() {
-  const publicUrl = process.env.PUBLIC_URL || '';
-
   const { id } = useParams();
   const [loading, setLoading] = useState(true);
   const [movie, setMovie] = useState(null);
@@ -58,7 +56,7 @@ function Detail() {
         }}
       >
         <div className="detail__overlay" />
-        <Link to={`${publicUrl}/`} className="btn btn--home">← Home</Link>
+        <Link to="/" className="btn btn--home">← Home</Link>
         <div className="detail__heroContent">
           <img
             className="detail__poster"
